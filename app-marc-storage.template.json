@@ -1,0 +1,17 @@
+{
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "platform": "complete",
+  "dependencies": [],
+  "modules": [
+    {
+      "name": "mod-source-record-storage",
+      "version": "latest"
+    },
+    {
+      "name": "mod-record-specifications",
+      "version": "latest"
+    }
+  ]
+}
