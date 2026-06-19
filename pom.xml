@@ -6,7 +6,7 @@
   <artifactId>app-marc-storage</artifactId>
   <groupId>org.folio</groupId>
   <description>MARC Storage Application</description>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <properties>
     <project.name>app-marc-storage</project.name>
