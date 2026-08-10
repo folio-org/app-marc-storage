@@ -1,16 +1,16 @@
 {
-  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000009819",
+  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000009932",
   "name" : "app-marc-storage",
-  "version" : "1.1.0-SNAPSHOT.100200000009819",
+  "version" : "1.1.0-SNAPSHOT.100200000009932",
   "description" : "MARC Storage Application",
   "modules" : [ {
+    "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2175",
+    "name" : "mod-record-specifications",
+    "version" : "3.1.0-SNAPSHOT.2175"
+  }, {
     "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2110",
     "name" : "mod-source-record-storage",
     "version" : "6.1.0-SNAPSHOT.2110"
-  }, {
-    "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2172",
-    "name" : "mod-record-specifications",
-    "version" : "3.1.0-SNAPSHOT.2172"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
@@ -371,7 +371,7 @@
       }
     }
   }, {
-    "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2172",
+    "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2175",
     "name" : "Record Specifications",
     "provides" : [ {
       "id" : "specification-storage",
@@ -569,7 +569,7 @@
       "subPermissions" : [ "specification-storage.specifications.collection.get", "specification-storage.specifications.item.get", "specification-storage.specification.rules.collection.get", "specification-storage.specification.rules.item.patch", "specification-storage.specification.fields.collection.get", "specification-storage.specification.fields.item.post", "specification-storage.fields.item.put", "specification-storage.fields.item.delete", "specification-storage.field.subfields.collection.get", "specification-storage.field.subfields.item.post", "specification-storage.field.indicators.collection.get", "specification-storage.field.indicators.item.post", "specification-storage.indicators.item.put", "specification-storage.indicator.indicator-codes.collection.get", "specification-storage.indicator.indicator-codes.item.post", "specification-storage.subfields.item.put", "specification-storage.subfields.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-record-specifications:3.1.0-SNAPSHOT.2172",
+      "dockerImage" : "folioci/mod-record-specifications:3.1.0-SNAPSHOT.2175",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
