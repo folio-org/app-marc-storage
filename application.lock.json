@@ -1,12 +1,12 @@
 {
-  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000009989",
+  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000010124",
   "name" : "app-marc-storage",
-  "version" : "1.1.0-SNAPSHOT.100200000009989",
+  "version" : "1.1.0-SNAPSHOT.100200000010124",
   "description" : "MARC Storage Application",
   "modules" : [ {
-    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2137",
+    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2173",
     "name" : "mod-source-record-storage",
-    "version" : "6.1.0-SNAPSHOT.2137"
+    "version" : "6.1.0-SNAPSHOT.2173"
   }, {
     "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2175",
     "name" : "mod-record-specifications",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2137",
+    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2173",
     "name" : "Source Record Storage Module",
     "provides" : [ {
       "id" : "source-storage-snapshots",
@@ -320,7 +320,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-source-record-storage:6.1.0-SNAPSHOT.2137",
+      "dockerImage" : "folioci/mod-source-record-storage:6.1.0-SNAPSHOT.2173",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
