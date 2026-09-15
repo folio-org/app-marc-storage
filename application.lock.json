@@ -1,12 +1,12 @@
 {
-  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000010560",
+  "id" : "app-marc-storage-1.1.0-SNAPSHOT.100200000010561",
   "name" : "app-marc-storage",
-  "version" : "1.1.0-SNAPSHOT.100200000010560",
+  "version" : "1.1.0-SNAPSHOT.100200000010561",
   "description" : "MARC Storage Application",
   "modules" : [ {
-    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.de9d5c7",
+    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2203",
     "name" : "mod-source-record-storage",
-    "version" : "6.1.0-SNAPSHOT.de9d5c7"
+    "version" : "6.1.0-SNAPSHOT.2203"
   }, {
     "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2187",
     "name" : "mod-record-specifications",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.de9d5c7",
+    "id" : "mod-source-record-storage-6.1.0-SNAPSHOT.2203",
     "name" : "Source Record Storage Module",
     "provides" : [ {
       "id" : "source-storage-snapshots",
@@ -185,19 +185,19 @@
     } ],
     "permissionSets" : [ {
       "permissionName" : "source-storage.records.populate.collection.post",
+      "replaces" : [ "source-storage.populate.records" ],
       "displayName" : "Source Storage - populate storage with test records",
-      "description" : "Populate storage with test records",
-      "replaces" : [ "source-storage.populate.records" ]
+      "description" : "Populate storage with test records"
     }, {
       "permissionName" : "source-storage.snapshots.item.get",
+      "replaces" : [ "source-storage.snapshots.get" ],
       "displayName" : "Source Storage - get snapshot",
-      "description" : "Get Snapshot",
-      "replaces" : [ "source-storage.snapshots.get" ]
+      "description" : "Get Snapshot"
     }, {
       "permissionName" : "source-storage.snapshots.collection.get",
+      "replaces" : [ "source-storage.snapshots.get" ],
       "displayName" : "Source Storage - get snapshots",
-      "description" : "Get Snapshots",
-      "replaces" : [ "source-storage.snapshots.get" ]
+      "description" : "Get Snapshots"
     }, {
       "permissionName" : "source-storage.snapshots.post",
       "displayName" : "Source Storage - create new snapshot",
@@ -232,67 +232,67 @@
       "description" : "Update records"
     }, {
       "permissionName" : "source-storage.parsed-records.fetch.collection.post",
+      "replaces" : [ "source-storage.records.fetch" ],
       "displayName" : "Source Storage - fetch records",
-      "description" : "Fetch Records",
-      "replaces" : [ "source-storage.records.fetch" ]
+      "description" : "Fetch Records"
     }, {
       "permissionName" : "source-storage.batch.records.collection.post",
       "displayName" : "Source Storage - stream collection of records",
       "description" : "Stream collection of records"
     }, {
       "permissionName" : "source-storage.stream.source-records.collection.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get results",
-      "description" : "Source Storage - get results",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Source Storage - get results"
     }, {
       "permissionName" : "source-storage.stream.marc-record-identifiers.collection.post",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - post record's identifiers",
-      "description" : "Post record's identifiers",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Post record's identifiers"
     }, {
       "permissionName" : "source-storage.records.suppress-discovery.item.put",
+      "replaces" : [ "source-storage.records.update" ],
       "displayName" : "Source Storage - update record's suppress from discovery field",
-      "description" : "Update record's suppress from discovery field",
-      "replaces" : [ "source-storage.records.update" ]
+      "description" : "Update record's suppress from discovery field"
     }, {
       "permissionName" : "source-storage.records.delete",
       "displayName" : "Source Storage - delete record",
       "description" : "Delete Record"
     }, {
       "permissionName" : "source-storage.source-records.item.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get source record",
-      "description" : "Get Source Record",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Get Source Record"
     }, {
       "permissionName" : "source-storage.records.collection.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get records",
-      "description" : "Get Records",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get Records"
     }, {
       "permissionName" : "source-storage.records.item.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get record",
-      "description" : "Get Record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get Record"
     }, {
       "permissionName" : "source-storage.source-records.collection.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get source record collection",
-      "description" : "Get Source Records",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Get Source Records"
     }, {
       "permissionName" : "source-storage.records.formatted.item.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get formatter record",
-      "description" : "Get formatted Record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get formatted Record"
     }, {
       "permissionName" : "source-storage.stream.records.collection.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - stream record",
-      "description" : "Stream record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Stream record"
     }, {
       "permissionName" : "source-storage.records.matching.collection.post",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get pairs of marc record ID to external entity ID",
-      "description" : "Get pairs of marc record ID to external entity ID",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get pairs of marc record ID to external entity ID"
     }, {
       "permissionName" : "source-storage.verified-records.collection.post",
       "displayName" : "Source Storage - validate marc bib ids in the system",
@@ -303,9 +303,9 @@
       "description" : "Initiate asynchronous migration job"
     }, {
       "permissionName" : "source-storage.migrations.item.get",
+      "replaces" : [ "source-storage.migrations.get" ],
       "displayName" : "Source Storage - get migration job(s)",
-      "description" : "Get migration job(s)",
-      "replaces" : [ "source-storage.migrations.get" ]
+      "description" : "Get migration job(s)"
     }, {
       "permissionName" : "source-storage.all",
       "displayName" : "Source Record Storage - all permissions",
@@ -320,18 +320,8 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "mod-source-record-storage:6.1.0-SNAPSHOT.de9d5c7",
-      "dockerPull" : false,
-      "dockerArgs" : {
-        "HostConfig" : {
-          "Memory" : 1073741824,
-          "PortBindings" : {
-            "8081/tcp" : [ {
-              "HostPort" : "%p"
-            } ]
-          }
-        }
-      },
+      "dockerImage" : "folioci/mod-source-record-storage:6.1.0-SNAPSHOT.2203",
+      "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
         "value" : "-XX:MaxRAMPercentage=66.0 -Djava.util.logging.config.file=vertx-default-jul-logging.properties"
@@ -368,7 +358,17 @@
       }, {
         "name" : "KAFKA_PORT",
         "value" : "9092"
-      } ]
+      } ],
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 1073741824,
+          "PortBindings" : {
+            "8081/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
     }
   }, {
     "id" : "mod-record-specifications-3.1.0-SNAPSHOT.2187",
